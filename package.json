@@ -1,0 +1,8 @@
+{
+  "name": "ts-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cmarr768/ts-crud.git",
+  "author": "cmarr768@gmail.com",
+  "license": "MIT"
+}
