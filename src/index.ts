@@ -1,5 +1,4 @@
 import express from 'express';
-import { userInfo } from 'os';
 import { Database } from "./database";
 const User = require('./models/user');
 
