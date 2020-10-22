@@ -1,22 +1,17 @@
 import mongoose from "mongoose";
 
 export class Database {
-    public connect = () => {
+    public connect = async () => {
         if (mongoose.connection && mongoose.connection.readyState !== 0) {
             return;
         }
-        mongoose.connect("mongodb://127.0.0.1:27017/ts-crud", {
+        await mongoose.connect("mongodb://127.0.0.1:27017/ts-crud", {
             useNewUrlParser: true,
             useFindAndModify: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
         });
-        mongoose.connection.once("open", async () => {
-            console.log("Connected to database");
-        });
-        mongoose.connection.on("error", () => {
-            console.log("Error connecting to database");
-        });
+        console.log("Connected to database");
     };
     public disconnect = () => {
         if (!mongoose.connection || mongoose.connection.readyState === 0) {
