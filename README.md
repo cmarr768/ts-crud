@@ -8,3 +8,6 @@
 - [ ] create postman collection
 - [ ] What other models can we add to just have?
 - [ ] What is the point of the app?
+- [ ] Communicate with Reddit API. 
+- [ ] Add Front End. 
+- [ ] Add sockets.  
