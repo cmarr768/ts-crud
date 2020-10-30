@@ -9,7 +9,6 @@ const database = new Database();
 database.connect()
     .then(() => {
         const user = new User({ email: 'test', firstName: 'tester' })
-        console.log('user', user)
         return user.save()
     })
 
@@ -17,6 +16,7 @@ app.get('/', (req, res) => {
     res.send('express setup');
 });
 app.use('/users', userRouter)
+
 app.listen(port, () => {
     return console.log(`server is listening on ${port}`);
 });
