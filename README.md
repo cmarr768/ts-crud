@@ -3,6 +3,7 @@
 - [ ] Remove repository pattern for now
 - [x] Create user model
 - [x] Connect to a database
+- [ ] get auto save of linting working
 - [ ] Set up api controller for a user add and get method
 - [ ] add the user add and get methods to the user dao
 - [ ] create postman collection
@@ -11,3 +12,8 @@
 - [ ] Communicate with Reddit API. 
 - [ ] Add Front End. 
 - [ ] Add sockets.  
+- [ ] Add more properties to User model
+- [ ] Update POST method in user controller to read properties from request body
+- [ ] Have POST method in user controller return the user
+- [ ] Update postman to pass in props
+- [ ] Update user controller test to pass in a body and evaluate the response.
