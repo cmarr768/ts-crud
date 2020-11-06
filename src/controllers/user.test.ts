@@ -1,6 +1,6 @@
-const app = require('../index')
+import request from 'supertest';
+import { app } from "../server"
 
-const request = require('supertest')
 describe("user-controller", () => {
     describe("get", () => {
         it("should return user ID", async () => {
