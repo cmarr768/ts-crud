@@ -1,5 +1,5 @@
 import { Router } from 'express'
-const User = require('../models/user');
+import { User } from "../models/user"
 
 const router = Router()
 
@@ -17,4 +17,4 @@ router.post("/", (req, res) => {
     res.sendStatus(204)
 })
 
-module.exports = router
+export { router }
