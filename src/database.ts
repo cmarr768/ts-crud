@@ -13,10 +13,10 @@ export class Database {
         });
         console.log("Connected to database");
     };
-    public disconnect = () => {
+    public disconnect = async () => {
         if (!mongoose.connection || mongoose.connection.readyState === 0) {
             return;
         }
-        mongoose.disconnect();
+        await mongoose.disconnect();
     };
 }
