@@ -1,4 +1,3 @@
-import { User } from "../models/user"
 import { UserDao, IUser } from "./user-dao"
 import { Database } from "../database";
 
@@ -31,6 +30,3 @@ describe("user-dao", () => {
         })
     })
 })
-
-//TODO: once tests are run have need to add the dao at controller level
-//TODO: add inversify
