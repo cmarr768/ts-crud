@@ -12,13 +12,21 @@ router.get("/:id", (req, res) => {
 })
 
 router.post("/", (req, res) => {
+    const {
+        email,
+        firstName,
+        lastName,
+        address,
+        dateOfBirth
+    } = req.body;
+
     const user = new User({
-        email: req.body.email,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        address: req.body.address,
-        dateOfBirth: req.body.dateOfBirth
-    })
+        email,
+        firstName,
+        lastName,
+        address,
+        dateOfBirth
+    });
     res.status(200).send(
         user
     )
