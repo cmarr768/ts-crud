@@ -34,8 +34,22 @@ export class UserController implements IBaseController {
     }
 
     private createUser = (req: Request, res: Response): void => {
-        const user = new User({ email: 'controller-test', firstName: 'controller-test' })
-        console.log(user, "controller was hit")
-        res.sendStatus(204)
+        const {
+            email,
+            firstName,
+            lastName,
+            address,
+            dateOfBirth
+        } = req.body;
+
+        const user = new User({
+            email,
+            firstName,
+            lastName,
+            address,
+            dateOfBirth
+        });
+
+        res.status(200).send(user);
     }
 }

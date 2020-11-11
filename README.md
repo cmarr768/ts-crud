@@ -12,8 +12,8 @@
 - [ ] Communicate with Reddit API. 
 - [ ] Add Front End. 
 - [ ] Add sockets.  
-- [ ] Add more properties to User model
-- [ ] Update POST method in user controller to read properties from request body
-- [ ] Have POST method in user controller return the user
-- [ ] Update postman to pass in props
-- [ ] Update user controller test to pass in a body and evaluate the response.
+- [x] Add more properties to User model
+- [x] Update POST method in user controller to read properties from request body
+- [o] Have POST method in user controller return the user
+- [x] Update postman to pass in props
+- [x] Update user controller test to pass in a body and evaluate the response.

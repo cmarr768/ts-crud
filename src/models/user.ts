@@ -9,7 +9,9 @@ interface IUser extends Document {
 const userSchema = new Schema({
     email: String,
     firstName: String,
-    lastName: String
+    lastName: String,
+    address: String,
+    dateOfBirth: String
 },
     {
         timestamps: true

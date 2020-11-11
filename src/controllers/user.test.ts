@@ -13,9 +13,17 @@ describe("user-controller", () => {
         })
     })
     describe("post", () => {
-        it("should return 204", async () => {
-            const response = await request(app).post("/users")
-            expect(response.status).toBe(204)
+        it("should return 200", async () => {
+            const userData = {
+                email: 'controller-test@email',
+                firstName: 'firstName',
+                lastName: 'LastName',
+                address: '123 Fake Street',
+                dateOfBirth: "2015-03-25"
+            }
+            const response = await (await request(app).post("/users").send(userData))
+            expect(response.status).toBe(200)
+            expect(response.body).toMatchObject(userData)
         })
     })
 })
