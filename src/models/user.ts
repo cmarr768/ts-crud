@@ -3,7 +3,10 @@ import mongoose from "mongoose"
 const userSchema = new mongoose.Schema({
     email: String,
     firstName: String,
-    lastName: String
+    lastName: String,
+    address: String,
+    age: Number,
+    dateJoined: Date
 },
     {
         timestamps: true
