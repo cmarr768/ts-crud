@@ -12,9 +12,17 @@ router.get("/:id", (req, res) => {
 })
 
 router.post("/", (req, res) => {
-    const user = new User({ email: 'controller-test@email', firstName: 'firstName', lastName: 'LastName', address: '123 Fake Street', dateOfBirth: "2015-03-25" })
-    console.log(user, "controller was hit")
-    res.sendStatus(204)
+    const user = new User({
+        email: req.body.email,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        address: req.body.address,
+        dateOfBirth: req.body.dateOfBirth
+    })
+    res.status(200).send(
+        user
+    )
+
 })
 
 export { router }

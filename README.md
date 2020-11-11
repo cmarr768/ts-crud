@@ -13,7 +13,7 @@
 - [ ] Add Front End. 
 - [ ] Add sockets.  
 - [x] Add more properties to User model
-- [o] Update POST method in user controller to read properties from request body
+- [x] Update POST method in user controller to read properties from request body
 - [o] Have POST method in user controller return the user
-- [o] Update postman to pass in props
-- [o] Update user controller test to pass in a body and evaluate the response.
+- [x] Update postman to pass in props
+- [x] Update user controller test to pass in a body and evaluate the response.
