@@ -1,11 +1,8 @@
 import "reflect-metadata"
-import { app } from "./server"
+import { App } from "./server"
 import { Database } from "./database";
-const database = new Database();
 
+const database = new Database("mongodb://127.0.0.1:27017/ts-crud");
 const port = 3001;
-
-app.listen(port, async () => {
-    await database.connect();
-    console.log(`server is listening on ${port}`);
-});
+const app = new App(port, database);
+app.start();
