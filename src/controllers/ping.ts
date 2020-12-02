@@ -24,6 +24,7 @@ export class PingController implements IBaseController {
     }
 
     private getPing = (req: Request, res: Response): void => {
+        console.log("getPing")
         res.send({ ping: "pong" })
     }
 }
