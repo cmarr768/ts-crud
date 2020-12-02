@@ -1,4 +1,7 @@
 # ts-crud
+## What features to add to the app
+- [ ] Some sort of home page
+- [ ] Kanban board
 ## List of things to do
 - [ ] Remove repository pattern for now
 - [x] Create user model
@@ -17,3 +20,12 @@
 - [o] Have POST method in user controller return the user
 - [x] Update postman to pass in props
 - [x] Update user controller test to pass in a body and evaluate the response.
+- [ ] Home page - button to create a new board
+- [ ] Home page - list of boards
+- [ ] Home page should be user specific
+- [ ] Kanban board - add a card
+  - [ ] a board model
+  - [ ] a card model
+- [ ] Kanban board - delete a card
+- [ ] Kanban board - move cards across columns
+- [ ] Kanban board will start with static columns
